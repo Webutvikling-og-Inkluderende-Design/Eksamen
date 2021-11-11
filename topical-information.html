@@ -13,6 +13,7 @@
         body {
             height: 100%;
             margin: 0;
+            background-color:slategrey;
         }
         h1{
             display: flex;
@@ -27,8 +28,13 @@
             
         }
 
+        .currentPage {
+            color:cadetblue;
+            pointer-events: none;
+            text-decoration: none;
+        }
+
         header {
-            background-image: url("img/placeholderBilde.jpg");
             display: flex;
             justify-content: column-reverse; 
             /* Dette gjør at overskriften h1 kommer øverst og navigasjonsmenyen nav under. */
@@ -37,10 +43,14 @@
         article  {
             display: flex;
             flex-direction: column;   
-            padding: 0 10vw; 
+            justify-content: space-between;
+            padding: 0 5vw; 
             background-color:cadetblue;
             font-size: 16px;
-            margin: 0 10vw;
+            margin: 0 5vw;
+            border-radius: 8px;
+            margin: 15px 5rem;
+            padding: 2rem;
         }
 
         h2 {
@@ -52,12 +62,14 @@
             display: flex;
             justify-content: flex-end;
             width: 30vw;
+            height: auto;
         }
 
         div {
             display: flex;
             text-align:justify;
             justify-content: space-around;
+            padding: 2rem;
         }
 
         div:nth-child(odd) {
@@ -71,8 +83,7 @@
         }
 
         p {
-            width: 30vw;
-            
+            width: 30vw;     
         }
 
         
@@ -87,7 +98,7 @@
                 <a id="navbar-text-home" href="index.html" alt="Link that leads to homepage">Home</a>
                 <a id="navbar-text-reflection-essay" href="reflection-essay.html" alt="Link to the reflection-essay page">Reflection-essay</a>
                 <a id="navbar-text-accessibility" href="accessibility.html" alt="Link to the accessibility page">Accessibility</a>
-                <a id="navbar-text-topical-information" href="topical-information.html" alt="Link to the topical information page">Topical information</a>
+                <a class= "currentPage" id="navbar-text-topical-information" href="topical-information.html" alt="Link to the topical information page">Topical information</a>
                 <a id="navbar-text-fun" href="fun-page.html" alt="Link to the fun page">Fun page</a>
             </nav>
         </header>
@@ -99,7 +110,7 @@
             <article>
                 <h2>Internet as a ubiquitous infrastructure and possible political consequences </h2> 
                 <div>
-                    <img src="img/placeholderBilde.jpg" alt="" width="400" height=auto>
+                    <img src="images/topical/multipleSoMe.jpg" alt="">
                     <p>
                         A few days ago, NRK wrote an article about political spending on ads on social
                         media (<a href="https://www.nrk.no/tromsogfinnmark/sa-mye-har-arbeiderpartiet_-
@@ -120,7 +131,7 @@
                 <!-- ANDRE AVSNITT AV OPPGAVE 1 -->    
                 
                 <div>
-                    <img src="img/placeholderBilde.jpg" alt="" width="400" height=auto>
+                    <img src="images/topical/manipulate.jpg" alt="">
                     <p>
                         The effect of the internet on elections became very visible a few years ago, when
                         NRK in the program “Folkeopplysningen” tried to manipulate a school election.
@@ -136,7 +147,7 @@
                 <!-- TREDJE AVSNITT AV OPPGAVE 1 -->
                 
                 <div>
-                    <img src="img/placeholderBilde.jpg" alt="" width="400" height=auto>
+                    <img src="images/topical/socialMedia.jpg" alt="">
                     <p>
                         This discussion led us onto the theme of the US election in 2016. The company
                         Cambrigde Analytica collected data on voters to help Trump's campaign. They claim
@@ -156,7 +167,7 @@
                 <h2>Innovators societal responsibility </h2> 
                 
                 <div>
-                    <img src="img/placeholderBilde.jpg" alt="" width="400" height=auto>
+                    <img src="images/topical/techWorld.jpg" alt="">
                     <p>
                         There’s arguably a lot of benefits for humankind as a result of the implication of the
                         internet/world wide web. Connections across continents and borders are something
@@ -172,7 +183,7 @@
                 <!-- ANDRE AVSNITT AV OPPGAVE 2 -->    
                 
                 <div>
-                    <img src="img/placeholderBilde.jpg" alt="" width="400" height=auto>
+                    <img src="images/topical/techAlone.jpg" alt="">
                     <p>
                         Our easy access to entertainment could also be considered significant, especially
                         now. However this easy access comes with its own challenges. Whilst the use of the
@@ -192,7 +203,7 @@
                  <!-- TREDJE AVSNITT AV OPPGAVE 2 -->
                 
                 <div>
-                    <img src="img/placeholderBilde.jpg" alt="" width="400" height=auto>
+                    <img src="images/topical/techMultiple.jpg" alt="">
                     <p>
                         Up until now there has been little involvement from tech companies to try and
                         combat the problem. Nonetheless last year the US Department of Justice issued a
@@ -218,6 +229,9 @@
 
         <!-- FOOTER -->
         <footer>
+            <p>
+                Alle bildene er hentet fra <a href="https://unsplash.com/" target="_blank">www.unsplash.com</a>
+            </p>
 
         </footer>
 
