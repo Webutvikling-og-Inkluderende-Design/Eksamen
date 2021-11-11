@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Accessibility</title>
+    <link rel="stylesheet" href="stylesheet.css">
+
+    <style>
+
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        h1{
+            display: flex;
+            justify-content: center;
+            margin: 0;
+        }
+        nav{
+            display: flex;
+            justify-content: space-around;
+            font-size: 20px;
+            padding: 2rem;
+            
+        }
+
+        header {
+            background-image: url("img/placeholderBilde.jpg");
+            display: flex;
+            justify-content: column-reverse; 
+            /* Dette gjør at overskriften h1 kommer øverst og navigasjonsmenyen nav under. */
+        }
+
+        main  {
+            width: 80vw;
+            display: flex;
+            flex-direction: column;   
+            padding: 0 10vw; 
+            background-color: cadetblue;
+            font-size: 24px;
+        }
+
+        h2 {
+            padding: 2rem;
+
+        }
+
+        img {
+            display: flex;
+            justify-content: flex-end;
+            width: 30vw;
+        }
+
+        div {
+            display: flex;
+            text-align:justify;
+            justify-content: space-around;
+        }
+
+        div:nth-child(odd) {
+            display: flex;
+            flex-direction: row;
+        }
+
+        div:nth-child(even) {
+            display: flex;
+            flex-direction: row-reverse;
+        }
+
+        p {
+            width: 30vw;
+            
+        }
+
+        h2{
+            display: flex;
+            justify-content: center;
+        }
+
+        h3{
+           display: flex;
+           justify-content: center;
+        }
+
+        div:nth-child(3) > div, div:nth-child(4) > div, div:nth-child(5) > div, div:nth-child(6) > div{
+            flex-direction: column;
+        }
+
+
+        
+    </style>
+</head>
+
+    <body>
+        <!-- NAVIGASJONSMENY -->
+        <header id="forsidebilde">
+            <h1 id="side-tittel">Accessibility</h1>
+            <nav class="navbar">
+                <a id="navbar-text-home" href="index.html" alt="Link that leads to homepage">Home</a>
+                <a id="navbar-text-reflection-essay" href="reflection-essay.html" alt="Link to the reflection-essay page">Reflection-essay</a>
+                <a id="navbar-text-accessibility" href="accessibility.html" alt="Link to the accessibility page">Accessibility</a>
+                <a id="navbar-text-topical-information" href="topical-information.html" alt="Link to the topical information page">Topical information</a>
+                <a id="navbar-text-fun" href="fun-page.html" alt="Link to the fun page">Fun page</a>
+            </nav>
+        </header>
+
+        <main>
+
+            <!--    1. AVSNITT    -->      
+        
+                <h2>Accessibility </h2> 
+                <div>
+                    <img src="images/accessibility/sigmund-4MoIpDcSlr4-unsplash.jpg" alt="" width="400" height=auto>
+                    <p>
+                        A great web designer is someone who engineers a website in such a way that most users never even notice their work. 
+                        Because accessibility is about more than readability and understandability of a web page. 
+                        Good accessibility is for some, the difference between being completely lost online 
+                        and navigating your page like a pro. We use accessibility to make sure everyone can connect with the world 
+                        through the internet, no matter the cognitive difficulties.
+
+                        
+                    </p>
+                </div>
+
+                <!--    2. AVSNITT    -->    
+                
+                <div>
+                    
+                    <img src="images/accessibility/iStock_47245808_LARGE.jpg" alt="" width="400" height=auto>
+                    <div>
+                        <h3>Html</h3>
+                    
+                        <p>
+                            Good accessibility is achieved through several small changes and additions, 
+                            and is simple enough to do that no one has any excuse to exclude it. 
+                            A good example that we’ve used in our html-code, is to include alternative text to images 
+                            which makes it easier for user with eyesight disabilities to know what is presented on the 
+                            web page when navigating. Another similar accessibility addition is to give links an alternative 
+                            text describing exactly where it will take you. This is very helpful for the same reasons.
+
+                        </p>  
+                    </div>  
+                </div>
+
+                <!--    3. AVSNITT    -->   
+                
+                <div>
+                    <img src="images/accessibility/yomex-owo-gRTzhQsiVG0-unsplash.jpg" alt="" width="400" height=auto>
+                    <div>
+                        <h3>CSS</h3>
+                        <p>
+                            Accessibility is not exclusively an html thing though, and we’ve made some adjustments in our CSS as well. 
+                            A few examples are making sure the text is big enough to read and that the font used can be read, 
+                            which usually means a sans-serif or roman type font, though this is not a rule. 
+                            Another quick fix to immensely improve your accessibility, especially for users with poor eyesight 
+                            or colour blindness, is to increase the contrast of text and illustrative images. 
+                            Make sure elements are clearly separated from the background and each other, 
+                            not merging into an incomprehensible mess. This is better known as Universal Design, another term for accessibility.
+
+                        </p>
+                    </div>   
+                </div>
+
+
+
+                <!--    4. AVSNITT    -->   
+
+                <div>
+                    <img src="images/accessibility/color-blind-test.png" alt="" width="400" height=auto>
+                    <div>
+                        <h3>Code check</h3>
+                        <p>
+                            Before and after code-check
+                            Bip bop bip, fylltekst…
+
+                        </p>
+                    </div>   
+                </div>
+
+
+
+                <!--    5. AVSNITT    -->   
+                
+                <div>
+                    <img src="images/accessibility/jd-mason-cKT0oJL9vMI-unsplash.jpg" alt="" width="400" height=auto>
+                    <div>
+                        <h3>Subheading</h3>
+                        <p>
+                            As stated in the introduction, good accessibility is not something the average person will even notice, 
+                            however for those with cognitive difficulties its crucial to be able to navigate properly and 
+                            be a part of the ever-growing world wide web.
+
+
+                        </p>
+                    </div>   
+                </div>
+        </main>
+
+
+
+        <!-- FOOTER -->
+        <footer>
+
+        </footer>
+
+    </body>
