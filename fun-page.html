@@ -32,7 +32,7 @@
                     <textarea id="hackspace" name="hackspace" rows="20" cols="50" placeholder="Flaunt your awesome hacking skils here!"></textarea>
                     <br>
                     <div class="popup" onclick="PopUp()">
-                        <button type="button">HACK</button>
+                        <button id="hack-button" type="button">HACK</button>
                         <img class="popup-chat" id="fun-chat" src="images/fun/chat.jpg" alt="Iphone chat screen with a message from Government telling the receiver it's been hacked.">
                     </div>
                 </form>
@@ -42,6 +42,29 @@
 </html>
 
 <style>
+
+#fun-background-image{
+    background-image: url("/images/fun/matrix.jpg");
+}
+#fun-background-box{
+    position: absolute;
+    margin: auto;
+    top:  50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding-top: 250px;
+    background-color: #000000;
+    width: 60vw;
+    display: inline-block;
+    text-align: center;
+}
+
+h1{
+    color: white;
+}
+h2{
+    color: white;
+}
 
 /* Input field styling (Matrix) */
 input[type="text"], textarea {
@@ -66,8 +89,13 @@ textarea:focus, input:focus {
     display: inline-block;
     text-align: center;
 }
-.hack-area h2{
-    text-align: center;
+
+#hack-button{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: yellowgreen;
+    background-color: black;
+    font-size: 30px;
 }
 
 /* Pop-up styling and function */
