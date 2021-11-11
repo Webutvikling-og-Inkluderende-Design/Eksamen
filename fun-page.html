@@ -7,7 +7,7 @@
         <title>Being a first-year student at OsloMet</title>
         <link rel="stylesheet" href="stylesheet.css">
     </head>
-    <body>
+    <body id="fun-background-image">
         <header>
             <nav class="navbar">
                 <a id="navbar-text-accessibility" href="index.html" alt="Link to homepage.">Home</a>
@@ -17,10 +17,83 @@
                 <a id="navbar-text-fun" href="" alt="Current page, Fun!">Fun page</a>
             </nav>
         </header>
-        <main>
-            <div id="fun-background">
-                <h1>FUN!</h1>
+        <main id="fun-background-box">
+            <div>
+                <h1>Super Secret Page</h1>
+                <h2>FOR PRO HACKERS ONLY!!!</h2>
+                <div id="fun-cool-people">
+                    <img src="images/fun/cool-kid.jpg" alt="Cool todler in car seat wearing green tinted sunglasses.">
+                    <img src="images/fun/sunglasses.jpg" alt="Cool fit young smiling man arms crossed wearing blue tinted sunglasses.">
+                </div>
+            </div>
+            <div class="hack-area">
+                <h2>Hack government below!</h2>
+                <form>
+                    <textarea id="hackspace" name="hackspace" rows="20" cols="50" placeholder="Flaunt your awesome hacking skils here!"></textarea>
+                    <br>
+                    <div class="popup" onclick="PopUp()">
+                        <button type="button">HACK</button>
+                        <img class="popup-chat" id="fun-chat" src="images/fun/chat.jpg" alt="Iphone chat screen with a message from Government telling the receiver it's been hacked.">
+                    </div>
+                </form>
             </div>
         </main>
     </body>
 </html>
+
+<style>
+
+/* Input field styling (Matrix) */
+input[type="text"], textarea {
+background-color : #000000;
+}
+input, select, textarea{
+    color: #06be00;
+}
+textarea:focus, input:focus {
+    color: #06be00;
+}
+
+/* Images of cool people */
+#fun-cool-people img{
+    width: 15vw;
+    height: auto;
+}
+
+.hack-area{
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    text-align: center;
+}
+.hack-area h2{
+    text-align: center;
+}
+
+/* Pop-up styling and function */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+.popup .popup-chat {
+  visibility: hidden;
+  width: 500px;
+  background-color: rgb(11, 90, 0);
+  padding: 5px 5px;
+  position: absolute;
+  bottom: 125%;
+  left: -225px;
+}
+.popup .visible {
+  visibility: visible;
+}
+</style>
+
+<script>
+    // Script is borrowed from W3School as we have not been taught Javascript, but i wanted to test it out nonetheless.
+    function PopUp() {
+      var popup = document.getElementById("fun-chat");
+      popup.classList.toggle("visible");
+    }
+</script>
