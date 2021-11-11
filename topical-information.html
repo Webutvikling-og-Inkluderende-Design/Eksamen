@@ -10,29 +10,54 @@
 
     <style>
 
-       
+        body {
+            height: 100%;
+            margin: 0;
+        }
         h1{
             display: flex;
             justify-content: center;
+            margin: 0;
         }
         nav{
             display: flex;
             justify-content: space-around;
+            font-size: 20px;
+            padding: 2rem;
+            
         }
 
         header {
+            background-image: url("img/placeholderBilde.jpg");
             display: flex;
-            justify-content: column-reverse;
+            justify-content: column-reverse; 
+            /* Dette gjør at overskriften h1 kommer øverst og navigasjonsmenyen nav under. */
+        }
+
+        article  {
+            display: flex;
+            flex-direction: column;   
+            padding: 0 10vw; 
+            background-color:cadetblue;
+            font-size: 16px;
+            margin: 0 10vw;
+        }
+
+        h2 {
+            padding: 2rem;
+
         }
 
         img {
             display: flex;
             justify-content: flex-end;
+            width: 30vw;
         }
 
         div {
             display: flex;
             text-align:justify;
+            justify-content: space-around;
         }
 
         div:nth-child(odd) {
@@ -44,13 +69,20 @@
             display: flex;
             flex-direction: row-reverse;
         }
+
+        p {
+            width: 30vw;
+            
+        }
+
+        
     </style>
 </head>
 
     <body>
         <!-- NAVIGASJONSMENY -->
-        <header id="forsidebilde">
-            <h1 id="side-tittel">Being a first-year student at OsloMet</h1>
+        <header>
+            <h1>Being a first-year student at OsloMet</h1>
             <nav class="navbar">
                 <a id="navbar-text-home" href="index.html" alt="Link that leads to homepage">Home</a>
                 <a id="navbar-text-reflection-essay" href="reflection-essay.html" alt="Link to the reflection-essay page">Reflection-essay</a>

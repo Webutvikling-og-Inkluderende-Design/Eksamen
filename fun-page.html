@@ -1,19 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Being a
-        first-year student at OsloMet</title>
-    <link rel="stylesheet" href="funstyle.css">
-</head>
-<body>
-    <header id="forsidebilde">
-        <h1 id="side-tittel">Being a first-year student at OsloMet</h1>
-        <nav class="navbar">
-            <a id="navbar-text-reflection-essay" href="reflection-essay.html" alt="Link to menu page further down on site.">Reflection-essay</a>
-            <a id="navbar-text-accessibility" href="accessibility.html" alt="Link to information page at the bottom of the site.">Accessibility</a>
-            <a id="navbar-text-topical-information" href="topical-information.html"Link to report as required by the task description.">Topical information</a>
-            <a id="navbar-text-fun" href="fun-page.html" alt="Link to report as required by the task description.">Fun page</a>
-        </nav>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Being a first-year student at OsloMet</title>
+        <link rel="stylesheet" href="stylesheet.css">
+    </head>
+    <body id="fun-background-image">
+        <header>
+            <nav class="navbar">
+                <a id="navbar-text-accessibility" href="index.html" alt="Link to homepage.">Home</a>
+                <a id="navbar-text-reflection-essay" href="reflection-essay.html" alt="Link to page with reflection essay.">Reflection-essay</a>
+                <a id="navbar-text-accessibility" href="accessibility.html" alt="Link to page with accessibility task.">Accessibility</a>
+                <a id="navbar-text-topical-information" href="topical-information.html" alt="Link to page with topical information task.">Topical information</a>
+                <a id="navbar-text-fun" href="" alt="Current page, Fun!">Fun page</a>
+            </nav>
+        </header>
+        <main id="fun-background-box">
+            <div>
+                <h1>Super Secret Page</h1>
+                <h2>FOR PRO HACKERS ONLY!!!</h2>
+                <div id="fun-cool-people">
+                    <img src="images/fun/cool-kid.jpg" alt="Cool todler in car seat wearing green tinted sunglasses.">
+                    <img src="images/fun/sunglasses.jpg" alt="Cool fit young smiling man arms crossed wearing blue tinted sunglasses.">
+                </div>
+            </div>
+            <div class="hack-area">
+                <h2>Hack government below!</h2>
+                <form>
+                    <textarea id="hackspace" name="hackspace" rows="20" cols="50" placeholder="Flaunt your awesome hacking skils here!"></textarea>
+                    <br>
+                    <div class="popup" onclick="PopUp()">
+                        <button id="hack-button" type="button">HACK</button>
+                        <img class="popup-chat" id="fun-chat" src="images/fun/chat.jpg" alt="Iphone chat screen with a message from Government telling the receiver it's been hacked.">
+                    </div>
+                </form>
+            </div>
+        </main>
+    </body>
+</html>
+
+<style>
+
+#fun-background-image{
+    background-image: url("/images/fun/matrix.jpg");
+}
+#fun-background-box{
+    position: absolute;
+    margin: auto;
+    top:  50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding-top: 250px;
+    background-color: #000000;
+    width: 60vw;
+    display: inline-block;
+    text-align: center;
+}
+
+h1{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h2{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Input field styling (Matrix) */
+input[type="text"], textarea {
+background-color : #000000;
+}
+input, select, textarea{
+    color: #06be00;
+}
+textarea:focus, input:focus {
+    color: #06be00;
+}
+
+/* Images of cool people */
+#fun-cool-people img{
+    width: 15vw;
+    height: auto;
+}
+
+.hack-area{
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    text-align: center;
+}
+
+#hack-button{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #06be00;
+    background-color: black;
+    font-size: 30px;
+}
+
+/* Pop-up styling and function */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+.popup .popup-chat {
+  visibility: hidden;
+  width: 500px;
+  background-color: rgb(11, 90, 0);
+  padding: 5px 5px;
+  position: absolute;
+  bottom: 125%;
+  left: -225px;
+}
+.popup .visible {
+  visibility: visible;
+}
+</style>
+
+<script>
+    // Script is borrowed from W3School as we have not been taught Javascript, but i wanted to test it out nonetheless.
+    function PopUp() {
+      var popup = document.getElementById("fun-chat");
+      popup.classList.toggle("visible");
+    }
+</script>
