@@ -5,16 +5,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Being a first-year student at OsloMet</title>
-        <link rel="stylesheet" href="stylesheet.css">
+        <link rel="" href="">
     </head>
     <body id="fun-background-image">
         <header>
             <nav class="navbar">
-                <a id="navbar-text-accessibility" href="index.html" alt="Link to homepage.">Home</a>
-                <a id="navbar-text-reflection-essay" href="reflection-essay.html" alt="Link to page with reflection essay.">Reflection-essay</a>
-                <a id="navbar-text-accessibility" href="accessibility.html" alt="Link to page with accessibility task.">Accessibility</a>
-                <a id="navbar-text-topical-information" href="topical-information.html" alt="Link to page with topical information task.">Topical information</a>
-                <a id="navbar-text-fun" href="" alt="Current page, Fun!">Fun page</a>
+                <a id="navbar-text-accessibility" href="index.html" alt="Link to homepage.">HOME</a>
+                <a id="navbar-text-reflection-essay" href="reflection-essay.html" alt="Link to page with reflection essay.">REFLECTION-ESSAY</a>
+                <a id="navbar-text-accessibility" href="accessibility.html" alt="Link to page with accessibility task.">ACCESSIBILITY</a>
+                <a id="navbar-text-topical-information" href="topical-information.html" alt="Link to page with topical information task.">TOPICAL INFORMATION</a>
             </nav>
         </header>
         <main id="fun-background-box">
@@ -32,7 +31,7 @@
                     <textarea id="hackspace" name="hackspace" rows="20" cols="50" placeholder="Flaunt your awesome hacking skils here!"></textarea>
                     <br>
                     <div class="popup" onclick="PopUp()">
-                        <button id="hack-button" type="button">HACK</button>
+                        <button id="hack-button" type="button" alt="Button that displays message from the Government telling you that you've hacked them.">HACK</button>
                         <img class="popup-chat" id="fun-chat" src="images/fun/chat.jpg" alt="Iphone chat screen with a message from Government telling the receiver it's been hacked.">
                     </div>
                 </form>
@@ -54,23 +53,43 @@
     transform: translate(-50%,-50%);
     padding-top: 250px;
     background-color: #000000;
-    width: 60vw;
+    width: 70vw;
     display: inline-block;
     text-align: center;
 }
 
-h1{
-    color: white;
+.navbar{
+    padding-top: 10px;
+    position: relative;
+    text-align: center;
+    z-index: 1;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    display: grid;
+    grid-auto-flow: column;
+    margin-left: 18vw;
+    margin-right: 18vw;
+}
+.navbar a{
+    text-decoration: none;
+    color: white;
+}
+
+h1{
+    color: #06be00;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 100px;
 }
 h2{
     color: white;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
 }
 
 /* Input field styling (Matrix) */
 input[type="text"], textarea {
-background-color : #000000;
+    background-color : #000000;
 }
 input, select, textarea{
     color: #06be00;
@@ -83,6 +102,7 @@ textarea:focus, input:focus {
 #fun-cool-people img{
     width: 15vw;
     height: auto;
+    min-width: 150px;
 }
 
 .hack-area{
@@ -90,6 +110,9 @@ textarea:focus, input:focus {
     height: auto;
     display: inline-block;
     text-align: center;
+}
+.hack-area h2{
+    padding-top: 40px;
 }
 
 #hack-button{
@@ -102,28 +125,53 @@ textarea:focus, input:focus {
 
 /* Pop-up styling and function */
 .popup {
-  position: relative;
-  display: inline-block;
-  cursor: pointer;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
 }
 .popup .popup-chat {
-  visibility: hidden;
-  width: 500px;
-  background-color: rgb(11, 90, 0);
-  padding: 5px 5px;
-  position: absolute;
-  bottom: 125%;
-  left: -225px;
+    visibility: hidden;
+    width: 500px;
+    background-color: rgb(11, 90, 0);
+    padding: 5px 5px;
+    position: absolute;
+    bottom: 125%;
+    left: -205px;
 }
 .popup .visible {
-  visibility: visible;
+    visibility: visible;
+}
+
+/****** MEDIUM SCREEN < 800px   ******/
+@media only screen and (max-width: 799px) {
+    
+    textarea{
+        width: 70%;
+    }
+
+    #fun-cool-people img{
+    width: 125px;
+    height: auto;
+    }
+
+    .navbar{
+    font-size: 10px;
+    margin-left: 15vw;
+    margin-right: 15vw;
+    }
+
+}
+
+@media only screen (max-width: 599px){
+
+    
 }
 </style>
 
 <script>
     // Script is borrowed from W3School as we have not been taught Javascript, but i wanted to test it out nonetheless.
     function PopUp() {
-      var popup = document.getElementById("fun-chat");
-      popup.classList.toggle("visible");
+        var popup = document.getElementById("fun-chat");
+        popup.classList.toggle("visible");
     }
 </script>
