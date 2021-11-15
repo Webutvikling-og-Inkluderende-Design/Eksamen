@@ -75,3 +75,10 @@ p {
 }
  
 /************ REFLECTION - ESSAY *************/
+
+#academic-realms {
+    display: flex;
+    justify-content: space-around;
+   
+
+}
