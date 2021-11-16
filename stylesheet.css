@@ -115,3 +115,20 @@ index .navbar {
 
 /************ STYLE REFLECTION - ESSAY *************/
 
+
+
+
+
+
+/************ STYLE ACCESSIBILITY *************/
+
+
+
+h3{
+    display: flex;
+    justify-content: center;
+ }
+
+ div:nth-child(3) > div, div:nth-child(4) > div, div:nth-child(5) > div, div:nth-child(6) > div{
+     flex-direction: column;
+ }
