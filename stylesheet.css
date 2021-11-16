@@ -23,6 +23,7 @@ nav{
     font-size: 16px;
     padding: 1rem;
     background-color: white;
+    /* Koden under gjør at navbaren blir sticky i toppen. */
     position: fixed;
     top: 0;
     width: 100%;
