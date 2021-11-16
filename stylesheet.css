@@ -1,45 +1,49 @@
-@font-face {
-    font-family: verdana;
-    src: url();
-}
-
 body {
     height: 100%;
     margin: 0;
-    background-color:slategrey;
+    background-color:rgb(249, 241, 255);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
 }
 h1{
     display: flex;
     justify-content: center;
     margin: 0;
 }
+
+header h1{
+    position: absolute;
+    left: 10000px;
+    /* Gjemmer tittel på siden, men vil leses av screen readers */
+}
+
 nav{
     display: flex;
     justify-content: space-around;
-    font-size: 20px;
-    padding: 2rem;
-    
+    font-size: 16px;
+    padding: 1rem;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
-
-.currentPage {
-    color:cadetblue;
-    pointer-events: none;
+nav a{
+    color: rgb(14, 2, 26);
     text-decoration: none;
 }
 
-header {
-    display: flex;
-    justify-content: column-reverse; 
-    /* Dette gjør at overskriften h1 kommer øverst og navigasjonsmenyen nav under. */
+.currentPage {
+    color:rgb(113, 89, 129);
+    pointer-events: none;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 article  {
     display: flex;
     flex-direction: column;   
     justify-content: space-between;
-    padding: 0 5vw; 
-    background-color:cadetblue;
+    padding: 0 5vw;
     font-size: 16px;
     margin: 0 5vw;
     border-radius: 8px;
@@ -48,7 +52,6 @@ article  {
 }
 
 h2 {
-    font-familiy: verdana;
     padding: 2rem;
     /*Bruke position: sticky; ?*/
 }
