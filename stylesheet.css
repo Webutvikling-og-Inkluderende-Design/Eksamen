@@ -56,18 +56,24 @@ article  {
 }
 
 h2 {
+    display: flex;
     padding: 2rem;
+    justify-content: center;
     /*Bruke position: sticky; ?*/
 }
 
 img {
     display: flex;
     justify-content: flex-end;
+    align-self: center;
+    
 }
 
-.parapgraph{
-    width: 550px;
-    height: auto;
+.paragraph{
+    flex-direction: column;
+    /* Får underoverskriftene over tekstene*/
+
+
 }
 
 div {
@@ -75,16 +81,6 @@ div {
     text-align:justify;
     justify-content: space-around;
     padding: 2rem;
-}
-
-div:nth-child(odd) {
-    display: flex;
-    flex-direction: row;
-}
-
-div:nth-child(even) {
-    display: flex;
-    flex-direction: row-reverse;
 }
 
 p {
@@ -117,11 +113,29 @@ index .navbar {
     
 
 
+h3{
+    display: flex;
+    justify-content: center;
+ }
+
+
 
 
 /************ STYLE REFLECTION - ESSAY *************/
 
+#academic-realms{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+#academic-realms > div{
+    margin: -2.5rem;
+}
+
+figcaption{
+    font-size: 13px;
+}
 
 
 
@@ -130,11 +144,3 @@ index .navbar {
 
 
 
-h3{
-    display: flex;
-    justify-content: center;
- }
-
- div:nth-child(3) > div, div:nth-child(4) > div, div:nth-child(5) > div, div:nth-child(6) > div{
-     flex-direction: column;
- }
