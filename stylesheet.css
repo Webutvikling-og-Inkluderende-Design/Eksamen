@@ -1,7 +1,13 @@
+@font-face {
+    font-family: verdana;
+    src: url();
+}
+
 body {
     height: 100%;
     margin: 0;
     background-color:slategrey;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 h1{
     display: flex;
@@ -42,6 +48,7 @@ article  {
 }
 
 h2 {
+    font-familiy: verdana;
     padding: 2rem;
     /*Bruke position: sticky; ?*/
 }
@@ -74,11 +81,33 @@ p {
     width: 30vw;     
 }
  
-/************ REFLECTION - ESSAY *************/
-
-#academic-realms {
+/************ STYLE INDEX-FILE (HOMEPAGE) **************/
+#homepage {
+    height: 100vh;
+    background-image: url("images/reflection/oslomet-campus.jpg");
+    background-size:cover;
     display: flex;
-    justify-content: space-around;
-   
-
+    justify-content: center;
 }
+
+#forsideheader {
+    width: 70vw;
+    align-self: center;
+    background-color: rgb(236, 208, 236);
+    padding: 2rem 1rem 0.5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+    
+
+
+
+
+/************ STYLE REFLECTION - ESSAY *************/
+
