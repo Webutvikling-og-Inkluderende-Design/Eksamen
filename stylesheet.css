@@ -1,0 +1,84 @@
+body {
+    height: 100%;
+    margin: 0;
+    background-color:slategrey;
+}
+h1{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+    padding: 2rem;
+    
+}
+
+.currentPage {
+    color:cadetblue;
+    pointer-events: none;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: column-reverse; 
+    /* Dette gjør at overskriften h1 kommer øverst og navigasjonsmenyen nav under. */
+}
+
+article  {
+    display: flex;
+    flex-direction: column;   
+    justify-content: space-between;
+    padding: 0 5vw; 
+    background-color:cadetblue;
+    font-size: 16px;
+    margin: 0 5vw;
+    border-radius: 8px;
+    margin: 15px 5rem;
+    padding: 2rem;
+}
+
+h2 {
+    padding: 2rem;
+    /*Bruke position: sticky; ?*/
+}
+
+img {
+    display: flex;
+    justify-content: flex-end;
+    width: 30vw;
+    height: auto;
+}
+
+div {
+    display: flex;
+    text-align:justify;
+    justify-content: space-around;
+    padding: 2rem;
+}
+
+div:nth-child(odd) {
+    display: flex;
+    flex-direction: row;
+}
+
+div:nth-child(even) {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+p {
+    width: 30vw;     
+}
+ 
+/************ REFLECTION - ESSAY *************/
+
+#academic-realms {
+    display: flex;
+    justify-content: space-around;
+   
+
+}
