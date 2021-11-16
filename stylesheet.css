@@ -1,5 +1,7 @@
 body {
     height: 100%;
+    width: 100vw;
+    overflow-x: hidden; /*prøver få vekk at man kan scrolle til siden*/
     margin: 0;
     background-color:rgb(249, 241, 255);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -23,10 +25,11 @@ nav{
     font-size: 16px;
     padding: 1rem;
     background-color: white;
+    text-transform:uppercase;
     /* Koden under gjør at navbaren blir sticky i toppen. */
     position: fixed;
     top: 0;
-    width: 100%;
+    width: 100vw;
 }
 nav a{
     color: rgb(14, 2, 26);
@@ -89,7 +92,7 @@ p {
 #homepage {
     height: 100vh;
     background-image: url("images/reflection/oslomet-campus.jpg");
-    background-size:cover;
+    background-size:unset;
     display: flex;
     justify-content: center;
 }
