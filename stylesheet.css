@@ -1,1 +1,120 @@
-style
+body {
+    height: 100%;
+    width: 100vw;
+    overflow-x: hidden; /*prøver få vekk at man kan scrolle til siden*/
+    margin: 0;
+    background-color:rgb(249, 241, 255);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+h1{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+header h1{
+    position: absolute;
+    left: -10000px;
+    /* Gjemmer tittel på siden, men vil leses av screen readers */
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    font-size: 16px;
+    padding: 1rem;
+    background-color: white;
+    text-transform:uppercase;
+    /* Koden under gjør at navbaren blir sticky i toppen. */
+    position: fixed;
+    top: 0;
+    width: 100vw;
+}
+nav a{
+    color: rgb(14, 2, 26);
+    text-decoration: none;
+}
+
+.currentPage {
+    color:rgb(113, 89, 129);
+    pointer-events: none;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+article  {
+    display: flex;
+    flex-direction: column;   
+    justify-content: space-between;
+    padding: 0 5vw;
+    font-size: 16px;
+    margin: 0 5vw;
+    border-radius: 8px;
+    margin: 15px 5rem;
+    padding: 2rem;
+}
+
+h2 {
+    padding: 2rem;
+    /*Bruke position: sticky; ?*/
+}
+
+img {
+    display: flex;
+    justify-content: flex-end;
+    width: 30vw;
+    height: auto;
+}
+
+div {
+    display: flex;
+    text-align:justify;
+    justify-content: space-around;
+    padding: 2rem;
+}
+
+div:nth-child(odd) {
+    display: flex;
+    flex-direction: row;
+}
+
+div:nth-child(even) {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+p {
+    width: 30vw;     
+}
+ 
+/************ STYLE INDEX-FILE (HOMEPAGE) **************/
+#homepage {
+    height: 100vh;
+    background-image: url("images/reflection/oslomet-campus.jpg");
+    background-size:unset;
+    display: flex;
+    justify-content: center;
+}
+
+#forsideheader {
+    width: 70vw;
+    align-self: center;
+    background-color: rgb(236, 208, 236);
+    padding: 2rem 1rem 0.5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20%;
+}
+
+index .navbar {
+    display: flex;
+    justify-content: space-between;
+}
+    
+
+
+
+
+/************ STYLE REFLECTION - ESSAY *************/
+
