@@ -86,6 +86,11 @@ div {
 p {
     width: 30vw;     
 }
+
+.article-images{
+    width: 30%;
+
+}
  
 /************ STYLE INDEX-FILE (HOMEPAGE) **************/
 #homepage {
