@@ -27,7 +27,7 @@ nav{
     background-color: white;
     text-transform:uppercase;
     /* Koden under gjør at navbaren blir sticky i toppen. */
-    position: fixed;
+    position: sticky;
     top: 0;
     width: 100vw;
 }
