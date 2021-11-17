@@ -7,12 +7,6 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     
 }
-
-.forsidebilde {
-    position: relative;
-    
-}
-
 h1{
     display: flex;
     justify-content: center;
