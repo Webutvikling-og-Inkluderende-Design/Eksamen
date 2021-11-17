@@ -28,7 +28,8 @@ h3 {
 }
 
 p {
-    width: 30vw;
+    width: 40vw;
+    max-width: 400px;
 }
 
 .intro {
@@ -98,18 +99,21 @@ img {
     display: flex;
     justify-content: flex-end;
     align-self: center;
+    padding: 0;
     
 }
 
 .paragraph-img {
     width: 30%;
+    min-width: 250px;
 }
 
 #academic-realms img{
-    width: 250px
+    width: 100%;
+    max-width: 250px;
 }
 
-.paragraph{
+.paragraph-text{
     flex-direction: column;
     /* Får underoverskriftene over tekstene*/
 
@@ -120,7 +124,8 @@ div {
     display: flex;
     text-align:justify;
     justify-content: space-around;
-    padding: 2rem;
+    
+    /* padding: 2rem; */
 }
 
 /************ STYLE REFLECTION - ESSAY *************/
