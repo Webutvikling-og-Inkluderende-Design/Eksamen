@@ -1,42 +1,45 @@
 body {
-    height: 100%;
-    width: 100vw;
-    overflow-x: hidden; /*prøver få vekk at man kan scrolle til siden*/
-    margin: 0;
     background-color:rgb(255, 255, 255);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    
+    width: 100vw;
+    height: 100%;
+    /*prøver få vekk at man kan scrolle til siden*/
+    overflow-x: hidden; 
+    margin: 0;
 }
 
 .forsidebilde {
     background-image: url(/images/reflection/banner.jpg);
-    width: 100%;
     background-position: center;
+    background-size: cover;
+    width: 100vw;
     height: 50px;
+    padding: 40px 0 40px;
 }
 
 h1{
-    position: relative;
-    top: -10px;
     font-size: 30px;
     color: white;
+    position: relative;
+    top: -10px;
 }
 
 .navbar {
-    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    box-shadow: 0 3px 6px rgb(0 0 0 / 0.2);
 }
 
 nav{
     display: flex;
     justify-content: space-around;
     font-size: 16px;
-    padding: 1rem;
+    padding: 1rem 0 1rem;
     background-color: white;
     text-transform:uppercase;
     /* Koden under gjør at navbaren blir sticky i toppen. */
     position: sticky;
     top: 0;
     width: 100vw;
+    overflow: auto;
 }
 nav a{
     color: rgb(14, 2, 26);
