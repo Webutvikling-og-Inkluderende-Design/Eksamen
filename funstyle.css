@@ -1,5 +1,5 @@
 body {
-    background-color:rgb(0, 0, 0);
+    background-image: url(images/fun/matrix.jpg);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     width: 100vw;
     height: 100%;
@@ -11,38 +11,26 @@ body {
 /* Text elements */
 h1 {
     font-size: 30px;
-    color: rgb(60, 255, 0);
+    color: rgb(81, 255, 0);
     position: relative;
     top: -10px;
 }
 
 h2 {
+    color: rgb(255, 255, 255);
     display: flex;
-    /*padding: 2rem;    Fjerne denne?  */
     justify-content: center;
 }
 
 h3 {
+    color: rgb(81, 255, 0);
     display: flex;
     justify-content: center;
 }
 
-p {
-    width: 30vw;
-}
-
-.intro {
-    text-align: center;
-}
-
-.intro p{
-    width: 50vw;
-    font-size: 18px;
-}
-
 /* Banner styling */
 .forsidebilde {
-    background-image: url(images/reflection/banner.jpg);
+    background-image: url(images/fun/banner-fun.jpg);
     background-position: center;
     background-size: cover;
     width: 100vw;
@@ -55,9 +43,9 @@ nav{
     box-shadow: 0 3px 6px rgb(0 0 0 / 0.2);
     display: flex;
     justify-content: space-around;
-    font-size: 16px;
+    font-size: 1rem;
     padding: 1rem 0 1rem;
-    background-color: white;
+    background-color: rgb(0, 0, 0);
     text-transform:uppercase;
     /* Koden under gjør at navbaren blir sticky i toppen. */
     position: sticky;
@@ -67,12 +55,12 @@ nav{
 }
  
 nav a{ 
-    color: rgb(14, 2, 26);
+    color: rgb(255, 255, 255);
     text-decoration: none;
 }
 
 .currentPage {
-    color:rgb(113, 89, 129);
+    color:rgb(81, 255, 0);
     pointer-events: none;
     text-decoration: none;
     font-weight: bold;
@@ -84,8 +72,9 @@ article  {
     flex-direction: column;   
     justify-content: space-between;
     font-size: 16px;
-    margin: 15px 5rem;
+    margin: 0px 5rem;
     padding: 2rem;
+    background-color: #000000;
 }
 
 img {
@@ -94,17 +83,9 @@ img {
     align-self: center;
 }
 
-.paragraph-img {
-    width: 30%;
-}
-
-.paragraph-text {
-    display: flex;
-    flex-direction: column;
-}
-
-#academic-realms img{
-    width: 250px;
+#cool-images img{
+    width: 25%;
+    min-width: 200px;
 }
 
 .paragraph{
@@ -117,104 +98,159 @@ img {
 div {
     display: flex;
     justify-content: space-around;
-    padding: 2rem;
-}
-
-/************ STYLE REFLECTION - ESSAY *************/
-
-
-#academic-realms{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#academic-realms > div{
-    margin: -2.5rem;
-}
-
-figcaption{
-    font-size: 13px;
-}
-
-/************ STYLE HOME - PAGE *************/
-#homepage {
-    height: 100vh;
-    background-image: url("images/reflection/oslomet-campus.jpg");
-    background-size:cover;
-    display: flex;
-    justify-content: center;
-}
-
-#forsideheader {
-    width: 70vw;
-    background-color: white;
-    align-self: center;
-    display: flex;
-    flex-direction: column;
-    font-size: 16px;
-    text-transform:uppercase;
-    overflow: auto;
-    margin-bottom: 20%;
-}
-
-#navbar-forside {
-    width: 70vw;
-    box-shadow: 0 3px 6px rgb(0 0 0 / 0.0);
-    margin-top: -25px;
-    margin-bottom: 15px;
-}
-
-#side-tittel {
-    display: flex;
-    justify-content: center;
     padding: 1rem;
-    color:rgb(14, 2, 26);
 }
 
-/****** TABLET SCREEN 600px - 960px ******/
-@media screen and (max-width: 960px) and (min-width: 600px) {
-    p {
-        width: 55vw;
+/* Input field styling (Matrix) */
+input[type="text"], textarea {
+    background-color : #000000;
+}
+input, select, textarea{
+    color: #06be00;
+}
+textarea:focus, input:focus {
+    color: #06be00;
+}
+
+.hack-area{
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    text-align: center;
+    margin-left: -16px;
+}
+.hack-area h2{
+    padding-top: 40px;
+}
+
+#hack-button{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #06be00;
+    background-color: black;
+    font-size: 30px;
+}
+
+/* Pop-up styling and function */
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+.popup .popup-chat {
+    visibility: hidden;
+    width: 400px;
+    background-color: rgb(0, 0, 0);
+    padding: 5px 5px;
+    position: absolute;
+    left: -105%;
+    bottom: 110%;
+}
+.popup .visible {
+    visibility: visible;
+}
+
+footer{
+    margin-top: -30px;
+    margin-left: 20px;
+    color: white;
+    font-size: 8px;
+}
+
+/****** Screens < 700px ******/
+@media screen and (max-width: 700px) {
+    h1 {
+        font-size: 22.5px;
     }
 
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    .hack-area h2 {
+        margin-top: -20px;
+    }
     
-    div {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
+    h3 {
+        font-size: 1rem;
     }
 
-
-    #academic-realms > div {
-        display: flex;
-        flex-direction: row;
-        width: 60vw;
+    #cool-images img{
+        width: 40%;
+        min-width: 125px;
     }
 
-    figure {
-        margin-block: 1.5vw;
-        margin-inline: 1vw;
+    .forsidebilde {
+        height: 30px;
     }
 
-    #academic-realms img{
-        width: 30vw;
-    }
-
-    .paragraph-text {
-        display: flex;
-        justify-content: center;
-    }
-
-    .paragraph-img {
-        width: 55%;
-    }
-
-    .intro p {
-        width: 60vw;
-    }
-
-    nav {
+    nav{
         font-size: 0.7rem;
+    }
+
+    #hackspace {
+        width: 100%;
+        max-width: 380px;
+    }
+
+    .popup .popup-chat {
+        width: 325px;
+        left: -75%;
+    }
+}
+
+/****** Screens < 520px ******/
+@media screen and (max-width: 520px) {
+    .forsidebilde {
+        height: 1px;
+    }
+    
+    h1 {
+        font-size: 14px;
+    }
+
+    h2 {
+        font-size: 0.9rem;
+    }
+
+    .hack-area h2 {
+        font-size: 0.6rem;
+        margin-top: -20px;
+    }
+    
+    h3 {
+        font-size: 0.6rem;
+    }
+
+    nav{
+        font-size: 0.5rem;
+    }
+
+    #cool-images img{
+        width: 40%;
+        min-width: 80px;
+    }
+    
+    article  {
+        margin: 0px 2.5rem;
+        background-color: #000000;
+    }
+
+    #hackspace {
+        width: 100%;
+        max-width: 300px;
+        max-height: 200px;
+    }
+
+    .popup .popup-chat {
+        width: 225px;
+        left: -37.5%;
+    }
+
+    footer{
+        margin-top: -70px;
+        margin-left: 40px;
+        color: white;
+        font-size: 6px;
     }
 }

@@ -18,9 +18,9 @@
     <main>
         <!-- Navigasjonsbar -->
         <nav class="navbar">
+            <a id="navbar-text-home" href="index.html" alt="Link that leads to homepage">HOME</a>
             <a id="navbar-text-reflection-essay" href="reflection-essay.html" alt="Link to the reflection-essay page">REFLECTION</a>
             <a id="navbar-text-accessibility" href="accessibility.html" alt="Link to the accessibility page">ACCESSIBILITY</a>
-            <a id="navbar-text-home" href="index.html" alt="Link that leads to homepage">HOME</a>
             <a id="navbar-text-topical-information" href="topical-information.html" alt="Link to the topical information page">TOPICAL INFO</a>
             <a class= "currentPage" id="navbar-text-fun" href="fun-page.html" alt="Link to the fun page">FUN PAGE</a>
         </nav>
@@ -35,11 +35,46 @@
                 <h3>For PRO hackers only!!!</h3>
             </div>
             <!-- Avsnitt -->
-            <div>
-                <!-- Bilde til avsnitt -->
-                <img src="images/fun/cool-kid.jpg" alt="Cool todler in car seat wearing green tinted sunglasses.">
-                <img src="images/fun/sunglasses.jpg" alt="Cool fit young smiling man arms crossed wearing blue tinted sunglasses.">   
+            <div id="cool-images">
+                <div>
+                    <img src="images/fun/cool-kid.jpg" alt="Cool todler in car seat wearing green tinted sunglasses.">
+                    <img src="images/fun/sunglasses.jpg" alt="Cool fit young smiling man arms crossed wearing blue tinted sunglasses.">
+                </div>
+            </div>
+
+            <!-- Hack area -->
+            <div class="hack-area">
+                <h2>Hack government below!</h2>
+                <form>
+                    <textarea id="hackspace" name="hackspace" rows="20" cols="50" placeholder="Flaunt your awesome hacking skils here!"></textarea>
+                    <br>
+                    <div class="popup" onclick="PopUp()">
+                        <button id="hack-button" type="button" alt="Button that displays message from the Government telling you that you've hacked them.">HACK</button>
+                        <img class="popup-chat" id="fun-chat" src="images/fun/chat.jpg" alt="Iphone chat screen with a message from Government telling the receiver it's been hacked.">
+                    </div>
+                </form>
             </div>
         </article>
     </main>
+    <audio autoplay id="hacker-music">
+        <source src="images/fun/WBA Free Track - Hackers.mp3">
+      </audio>
+
+    <footer>
+        <p>
+            Music: Hackers - "Karl Casey @ White Bat Audio"
+        </p>
+    </footer>
 </body>
+
+<script>
+    // Script is borrowed from W3School as we have not been taught Javascript (not before exam start anyway), but i wanted to test it out nonetheless.
+    // PopUp
+    function PopUp() {
+        var popup = document.getElementById("fun-chat");
+        popup.classList.toggle("visible");
+    }
+    // Music Volume
+    var audio = document.getElementById("hacker-music");
+    audio.volume = 0.3;
+</script>

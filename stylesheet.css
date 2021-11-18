@@ -65,12 +65,12 @@ nav{
     width: 100vw;
     overflow: auto;
 }
-/* Fargen på teksten i navigeringsmenyen */ 
+ 
 nav a{ 
     color: rgb(14, 2, 26);
     text-decoration: none;
 }
-/* Fargen på teksten i navigeringsmenyen */
+
 .currentPage {
     color:rgb(113, 89, 129);
     pointer-events: none;
@@ -118,6 +118,16 @@ div {
     display: flex;
     justify-content: space-around;
     padding: 2rem;
+}
+
+footer{
+    margin-left: 8px;
+    color: rgb(0, 0, 0);
+    font-size: 8px;
+}
+footer a{
+    text-decoration: none;
+    color: rgb(14, 2, 26);
 }
 
 /************ STYLE REFLECTION - ESSAY *************/
