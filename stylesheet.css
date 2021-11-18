@@ -64,6 +64,7 @@ nav{
     top: 0;
     width: 100vw;
     overflow: auto;
+    z-index: 2;
 }
  
 nav a{ 
@@ -86,6 +87,16 @@ article  {
     font-size: 16px;
     margin: 15px 5rem;
     padding: 2rem;
+}
+
+.sticky-header {
+    display: flex;
+    position: sticky;
+    top: 1rem;
+    width: auto;
+    height: 2rem;
+    background-color: white;
+    
 }
 
 img {
