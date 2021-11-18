@@ -151,7 +151,7 @@ figcaption{
 #homepage {
     height: 100vh;
     background-image: url("images/reflection/oslomet-campus.jpg");
-    background-size:unset;
+    background-size:cover;
     display: flex;
     justify-content: center;
 }
