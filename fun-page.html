@@ -4,56 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Being a first-year student at OsloMet</title>
+    <title>Fun Page</title>
     <link rel="stylesheet" href="funstyle.css">
 </head>
-<body id="fun-background-image">
+<body>
     <!-- Toppbanner -->
     <header>
-        <div id="forsidebilde-fun">
-            <h1>Being a Hacker at *CLASSIFIED*</h1>
+        <div class="forsidebilde">
+            <h1>Being a pro hacker at *CLASSIFIED*</h1>
         </div>
     </header>
-    <main id="fun-background-box">
+
+    <main>
         <!-- Navigasjonsbar -->
         <nav class="navbar">
             <a id="navbar-text-reflection-essay" href="reflection-essay.html" alt="Link to the reflection-essay page">REFLECTION</a>
-            <a id="navbar-text-accessibility" href="accessibility.html" alt="Link to the accessibility page">Accessibility</a>
-            <a id="navbar-text-home" href="index.html" alt="Link that leads to homepage">Home</a>
+            <a id="navbar-text-accessibility" href="accessibility.html" alt="Link to the accessibility page">ACCESSIBILITY</a>
+            <a id="navbar-text-home" href="index.html" alt="Link that leads to homepage">HOME</a>
             <a id="navbar-text-topical-information" href="topical-information.html" alt="Link to the topical information page">TOPICAL INFO</a>
-            <a class= "currentPage" id="navbar-text-fun" href="fun-page.html" alt="Link to the fun page">Fun page</a>
+            <a class= "currentPage" id="navbar-text-fun" href="fun-page.html" alt="Link to the fun page">FUN PAGE</a>
         </nav>
         
-        <!-- Sidetittel -->
-        <div>
-            <h1>Super Secret Page</h1>
-            <h2>FOR PRO HACKERS ONLY!!!</h2>
-            <div id="fun-cool-people">
-                <img src="images/fun/cool-kid.jpg" alt="Cool todler in car seat wearing green tinted sunglasses.">
-                <img src="images/fun/sunglasses.jpg" alt="Cool fit young smiling man arms crossed wearing blue tinted sunglasses.">
-            </div>
-        </div>
+        <!-- Innhold -->
+        <article>
+            <!-- Sidetittel -->
+            <h2>SUPER SECRET PAGE</h2> 
 
-        <!-- Hack area -->
-        <div class="hack-area">
-            <h2>Hack government below!</h2>
-            <form>
-                <textarea id="hackspace" name="hackspace" rows="20" cols="50" placeholder="Flaunt your awesome hacking skils here!"></textarea>
-                <br>
-                <div class="popup" onclick="PopUp()">
-                    <button id="hack-button" type="button" alt="Button that displays message from the Government telling you that you've hacked them.">HACK</button>
-                    <img class="popup-chat" id="fun-chat" src="images/fun/chat.jpg" alt="Iphone chat screen with a message from Government telling the receiver it's been hacked.">
-                </div>
-            </form>
-        </div>
+            <div class="paragraph-text">
+                <!-- Subtittel -->    
+                <h3>For PRO hackers only!!!</h3>
+            </div>
+            <!-- Avsnitt -->
+            <div>
+                <!-- Bilde til avsnitt -->
+                <img src="images/fun/cool-kid.jpg" alt="Cool todler in car seat wearing green tinted sunglasses.">
+                <img src="images/fun/sunglasses.jpg" alt="Cool fit young smiling man arms crossed wearing blue tinted sunglasses.">   
+            </div>
+        </article>
     </main>
 </body>
-</html>
-
-<script>
-    // Script is borrowed from W3School as we have not been taught Javascript (not before exam start anyway), but i wanted to test it out nonetheless.
-    function PopUp() {
-        var popup = document.getElementById("fun-chat");
-        popup.classList.toggle("visible");
-    }
-</script>

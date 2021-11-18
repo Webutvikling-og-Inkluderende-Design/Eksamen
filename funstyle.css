@@ -1,5 +1,5 @@
 body {
-    background-image: url(images/fun/matrix.jpg);
+    background-color:rgb(0, 0, 0);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     width: 100vw;
     height: 100%;
@@ -8,29 +8,46 @@ body {
     margin: 0;
 }
 
-#fun-background-box{
-    position: absolute;
-    margin: auto;
-    top:  50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    padding-top: 400px;
-    background-color: #000000;
-    width: 70vw;
-    display: inline-block;
+/* Text elements */
+h1 {
+    font-size: 30px;
+    color: rgb(60, 255, 0);
+    position: relative;
+    top: -10px;
+}
+
+h2 {
+    display: flex;
+    /*padding: 2rem;    Fjerne denne?  */
+    justify-content: center;
+}
+
+h3 {
+    display: flex;
+    justify-content: center;
+}
+
+p {
+    width: 30vw;
+}
+
+.intro {
     text-align: center;
-    z-index: 0;
+}
+
+.intro p{
+    width: 50vw;
+    font-size: 18px;
 }
 
 /* Banner styling */
-#forsidebilde-fun {
+.forsidebilde {
     background-image: url(images/reflection/banner.jpg);
     background-position: center;
     background-size: cover;
     width: 100vw;
     height: 70px;
     padding: 40px 0 40px;
-    z-index: 2;
 }
 
 /* Navigation bar */
@@ -47,7 +64,6 @@ nav{
     top: 0;
     width: 100vw;
     overflow: auto;
-    z-index: 3;
 }
  
 nav a{ 
@@ -62,77 +78,143 @@ nav a{
     font-weight: bold;
 }
 
-/* Text elements */
-h1 {
-    font-size: 30px;
-    color: white;
-    position: relative;
-    top: -10px;
+/* Article specific text elements */
+article  {
+    display: flex;
+    flex-direction: column;   
+    justify-content: space-between;
+    font-size: 16px;
+    margin: 15px 5rem;
+    padding: 2rem;
 }
 
-h2 {
-    color: chartreuse;
+img {
+    display: flex;
+    justify-content: flex-end;
+    align-self: center;
+}
+
+.paragraph-img {
+    width: 30%;
+}
+
+.paragraph-text {
+    display: flex;
+    flex-direction: column;
+}
+
+#academic-realms img{
+    width: 250px;
+}
+
+.paragraph{
+    flex-direction: column;
+    /* Får underoverskriftene over tekstene*/
+
+
+}
+
+div {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+}
+
+/************ STYLE REFLECTION - ESSAY *************/
+
+
+#academic-realms{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#academic-realms > div{
+    margin: -2.5rem;
+}
+
+figcaption{
+    font-size: 13px;
+}
+
+/************ STYLE HOME - PAGE *************/
+#homepage {
+    height: 100vh;
+    background-image: url("images/reflection/oslomet-campus.jpg");
+    background-size:cover;
     display: flex;
     justify-content: center;
 }
 
-h3 {
+#forsideheader {
+    width: 70vw;
+    background-color: white;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    text-transform:uppercase;
+    overflow: auto;
+    margin-bottom: 20%;
+}
+
+#navbar-forside {
+    width: 70vw;
+    box-shadow: 0 3px 6px rgb(0 0 0 / 0.0);
+    margin-top: -25px;
+    margin-bottom: 15px;
+}
+
+#side-tittel {
     display: flex;
     justify-content: center;
+    padding: 1rem;
+    color:rgb(14, 2, 26);
 }
 
-/* Images of cool people */
-#fun-cool-people img{
-    width: 15vw;
-    height: auto;
-    min-width: 150px;
-}
+/****** TABLET SCREEN 600px - 960px ******/
+@media screen and (max-width: 960px) and (min-width: 600px) {
+    p {
+        width: 55vw;
+    }
 
-/* Input field styling (Matrix) */
-input[type="text"], textarea {
-    background-color : #000000;
-}
-input, select, textarea{
-    color: #06be00;
-}
-textarea:focus, input:focus {
-    color: #06be00;
-}
-
-.hack-area{
-    width: 100%;
-    height: auto;
-    display: inline-block;
-    text-align: center;
-}
-.hack-area h2{
-    padding-top: 40px;
-}
-
-#hack-button{
-    margin-top: 20px;
-    margin-bottom: 20px;
-    color: #06be00;
-    background-color: black;
-    font-size: 30px;
-}
+    
+    div {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
 
 
-/* Pop-up styling and function */
-.popup {
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
-}
-.popup .popup-chat {
-    visibility: hidden;
-    width: 500px;
-    background-color: rgb(11, 90, 0);
-    padding: 5px 5px;
-    position: absolute;
-    bottom: 125%;
-    left: -205px;
-}
-.popup .visible {
-    visibility: visible;
+    #academic-realms > div {
+        display: flex;
+        flex-direction: row;
+        width: 60vw;
+    }
+
+    figure {
+        margin-block: 1.5vw;
+        margin-inline: 1vw;
+    }
+
+    #academic-realms img{
+        width: 30vw;
+    }
+
+    .paragraph-text {
+        display: flex;
+        justify-content: center;
+    }
+
+    .paragraph-img {
+        width: 55%;
+    }
+
+    .intro p {
+        width: 60vw;
+    }
+
+    nav {
+        font-size: 0.7rem;
+    }
 }
