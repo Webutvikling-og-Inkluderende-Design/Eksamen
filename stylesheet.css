@@ -3,7 +3,7 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     width: 100vw;
     height: 100%;
-    /*prøver få vekk at man kan scrolle til siden*/
+    /*prøver få vekk at man kan scrolle til siden.          Tror den kan fjernes*/
     overflow-x: hidden; 
     margin: 0;
 }
@@ -18,7 +18,7 @@ h1 {
 
 h2 {
     display: flex;
-    padding: 2rem;
+    /*padding: 2rem;    Fjerne denne?  */
     justify-content: center;
 }
 
@@ -28,13 +28,11 @@ h3 {
 }
 
 p {
-    width: 40vw;
-    max-width: 400px;
+    width: 30vw;
 }
 
 .intro {
     text-align: center;
-    margin: -30px 0 0 0;
 }
 
 .intro p{
@@ -44,20 +42,17 @@ p {
 
 /* Banner styling */
 .forsidebilde {
-    background-image: url(/images/reflection/banner.jpg);
+    background-image: url(images/reflection/banner.jpg);
     background-position: center;
     background-size: cover;
     width: 100vw;
-    height: 50px;
+    height: 70px;
     padding: 40px 0 40px;
 }
 
 /* Navigation bar */
-.navbar {
-    box-shadow: 0 3px 6px rgb(0 0 0 / 0.2);
-}
-
 nav{
+    box-shadow: 0 3px 6px rgb(0 0 0 / 0.2);
     display: flex;
     justify-content: space-around;
     font-size: 16px;
@@ -70,11 +65,12 @@ nav{
     width: 100vw;
     overflow: auto;
 }
-nav a{
+/* Fargen på teksten i navigeringsmenyen */ 
+nav a{ 
     color: rgb(14, 2, 26);
     text-decoration: none;
 }
-
+/* Fargen på teksten i navigeringsmenyen */
 .currentPage {
     color:rgb(113, 89, 129);
     pointer-events: none;
@@ -87,10 +83,7 @@ article  {
     display: flex;
     flex-direction: column;   
     justify-content: space-between;
-    padding: 0 5vw;
     font-size: 16px;
-    margin: 0 5vw;
-    border-radius: 8px;
     margin: 15px 5rem;
     padding: 2rem;
 }
@@ -99,21 +92,22 @@ img {
     display: flex;
     justify-content: flex-end;
     align-self: center;
-    padding: 0;
-    
 }
 
 .paragraph-img {
     width: 30%;
-    min-width: 250px;
+}
+
+.paragraph-text {
+    display: flex;
+    flex-direction: column;
 }
 
 #academic-realms img{
-    width: 100%;
-    max-width: 250px;
+    width: 250px;
 }
 
-.paragraph-text{
+.paragraph{
     flex-direction: column;
     /* Får underoverskriftene over tekstene*/
 
@@ -122,13 +116,12 @@ img {
 
 div {
     display: flex;
-    text-align:justify;
     justify-content: space-around;
-    
-    /* padding: 2rem; */
+    padding: 2rem;
 }
 
 /************ STYLE REFLECTION - ESSAY *************/
+
 
 #academic-realms{
     display: flex;
@@ -142,4 +135,86 @@ div {
 
 figcaption{
     font-size: 13px;
+}
+
+/************ STYLE HOME - PAGE *************/
+#homepage {
+    height: 100vh;
+    background-image: url("images/reflection/oslomet-campus.jpg");
+    background-size:cover;
+    display: flex;
+    justify-content: center;
+}
+
+#forsideheader {
+    width: 70vw;
+    background-color: white;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    text-transform:uppercase;
+    overflow: auto;
+    margin-bottom: 20%;
+}
+
+#navbar-forside {
+    width: 70vw;
+    box-shadow: 0 3px 6px rgb(0 0 0 / 0.0);
+    margin-top: -25px;
+    margin-bottom: 15px;
+}
+
+#side-tittel {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    color:rgb(14, 2, 26);
+}
+
+/****** TABLET SCREEN 600px - 960px ******/
+@media screen and (max-width: 960px) and (min-width: 600px) {
+    p {
+        width: 55vw;
+    }
+
+    
+    div {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+
+    #academic-realms > div {
+        display: flex;
+        flex-direction: row;
+        width: 60vw;
+    }
+
+    figure {
+        margin-block: 1.5vw;
+        margin-inline: 1vw;
+    }
+
+    #academic-realms img{
+        width: 30vw;
+    }
+
+    .paragraph-text {
+        display: flex;
+        justify-content: center;
+    }
+
+    .paragraph-img {
+        width: 55%;
+    }
+
+    .intro p {
+        width: 60vw;
+    }
+
+    nav {
+        font-size: 0.7rem;
+    }
 }
