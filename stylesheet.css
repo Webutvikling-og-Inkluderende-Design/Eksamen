@@ -134,7 +134,7 @@ div {
 footer{
     margin-left: 8px;
     color: rgb(0, 0, 0);
-    font-size: 8px;
+    font-size: 10px;
 }
 footer a{
     text-decoration: none;
@@ -194,7 +194,7 @@ figcaption{
 }
 
 /****** TABLET SCREEN 600px - 960px ******/
-@media screen and (max-width: 960px) and (min-width: 600px) { 
+@media screen and (max-width: 960px) /* and (min-width: 600px)*/ { 
     .forsidebilde {
         height: 2em;
     }
@@ -274,6 +274,7 @@ figcaption{
 }
 
 /****** PHONE SCREEN < 600px ******/
+
 @media screen and (max-width: 600px) { 
     .forsidebilde {
         height: 0.8em;
