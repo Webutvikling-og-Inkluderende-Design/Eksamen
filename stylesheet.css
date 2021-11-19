@@ -54,8 +54,7 @@ nav{
     box-shadow: 0 3px 6px rgb(0 0 0 / 0.2);
     display: flex;
     justify-content: space-around;
-    font-size: 16px;
-    padding: 1rem 0 1rem;
+    font-size: 1rem;
     background-color: white;
     text-transform:uppercase;
     /* Koden under gjør at navbaren blir sticky i toppen. */
@@ -71,8 +70,7 @@ nav a{
     position: relative;
     color: rgb(14, 2, 26);
     text-decoration: none;     
-    padding: 2em;     
-    margin: -2em; 
+    padding: 1em;
 }
 
 nav a:hover {
