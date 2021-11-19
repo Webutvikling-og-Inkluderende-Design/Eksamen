@@ -1,37 +1,73 @@
 body {
-    height: 100%;
-    width: 100vw;
-    overflow-x: hidden; /*prøver få vekk at man kan scrolle til siden*/
-    margin: 0;
-    background-color:rgb(229, 219, 245);
+    background-color:rgb(255, 255, 255);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    
+    width: 100vw;
+    height: 100%;
+    /*prøver få vekk at man kan scrolle til siden.          Tror den kan fjernes*/
+    overflow-x: hidden; 
+    margin: 0;
 }
-h1{
+
+/* Text elements */
+h1 {
+    font-size: 2em;
+    color: white;
+    text-shadow: 4px 4px 8px #000000; /* Ble det lettere å lese nå? */
+    position: relative;
+    top: -10px;
+}
+
+h2 {
     display: flex;
     justify-content: center;
-    margin: 0;
 }
 
-header h1{
-    position: absolute;
-    left: -10000px;
-    /* Gjemmer tittel på siden, men vil leses av screen readers */
+h3 {
+    display: flex;
+    justify-content: center;
 }
 
+p {
+    width: 30vw;
+}
+
+.intro {
+    text-align: center;
+}
+
+.intro p{
+    width: 50vw;
+    font-size: 18px;
+}
+
+/* Banner styling */
+.forsidebilde {
+    background-image: url(images/reflection/banner.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    height: 70px;
+    padding: 40px 0 40px;
+}
+
+/* Navigation bar */
 nav{
+    box-shadow: 0 3px 6px rgb(0 0 0 / 0.2);
     display: flex;
     justify-content: space-around;
     font-size: 16px;
-    padding: 1rem;
+    padding: 1rem 0 1rem;
     background-color: white;
     text-transform:uppercase;
     /* Koden under gjør at navbaren blir sticky i toppen. */
     position: sticky;
     top: 0;
     width: 100vw;
+    overflow: auto;
+    z-index: 2;
 }
-nav a{
+ 
+nav a{ 
     color: rgb(14, 2, 26);
     text-decoration: none;
 }
@@ -43,30 +79,44 @@ nav a{
     font-weight: bold;
 }
 
+/* Article specific text elements */
 article  {
     display: flex;
     flex-direction: column;   
     justify-content: space-between;
-    padding: 0 5vw;
     font-size: 16px;
-    margin: 0 5vw;
-    border-radius: 8px;
     margin: 15px 5rem;
     padding: 2rem;
 }
 
-h2 {
+.sticky-header {
     display: flex;
-    padding: 2rem;
-    justify-content: center;
-    /*Bruke position: sticky; ?*/
+    position: sticky;
+    top: 1rem;
+    width: auto;
+    height: 2rem;
+    background-color: white;
+    margin-left: -5em;
+    margin-right: -5em;
 }
 
 img {
     display: flex;
     justify-content: flex-end;
     align-self: center;
-    
+}
+
+.paragraph-img {
+    width: 30%;
+}
+
+.paragraph-text {
+    display: flex;
+    flex-direction: column;
+}
+
+#academic-realms img{
+    width: 250px;
 }
 
 .paragraph{
@@ -78,55 +128,35 @@ img {
 
 div {
     display: flex;
-    text-align:justify;
     justify-content: space-around;
-    padding: 2rem;
+    padding: 2rem 0;
 }
 
-p {
-    width: 30vw;     
-}
-
-.article-images{
-    width: 30%;
-
-}
- 
-/************ STYLE INDEX-FILE (HOMEPAGE) **************/
-#homepage {
-    height: 100vh;
-    background-image: url("images/reflection/oslomet-campus.jpg");
-    background-size:unset;
+footer{
+    background-image: url(images/reflection/banner.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    height: 6rem;
+   /* padding: 40px 0 40px;   Kan fjernes*/
+    color: white;
+    text-shadow: 4px 4px 8px #000000; /* Ble det lettere å lese nå? */
     display: flex;
     justify-content: center;
+    text-align: center;
+   /* background-image: ;
+    margin-left: 8px;
+    color: rgb(0, 0, 0);
+    font-size: 10px;*/
 }
-
-#forsideheader {
-    width: 70vw;
-    align-self: center;
-    background-color: rgb(236, 208, 236);
-    padding: 2rem 1rem 0.5rem 1rem;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 20%;
+footer a{
+    text-decoration: none;
+    color: white;
+    /*color: rgb(14, 2, 26);*/
 }
-
-index .navbar {
-    display: flex;
-    justify-content: space-between;
-}
-    
-
-
-h3{
-    display: flex;
-    justify-content: center;
- }
-
-
-
 
 /************ STYLE REFLECTION - ESSAY *************/
+
 
 #academic-realms{
     display: flex;
@@ -142,10 +172,195 @@ figcaption{
     font-size: 13px;
 }
 
+/************ STYLE HOME - PAGE *************/
+#homepage {
+    height: 100vh;
+    background-image: url("images/reflection/oslomet-campus.jpg");
+    background-size:cover;
+    display: flex;
+    justify-content: center;
+}
 
+#forsideheader {
+    width: 70vw;
+    background-color: white;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    text-transform:uppercase;
+    overflow: auto;
+    margin-bottom: 20%;
+}
 
+#navbar-forside {
+    width: 70vw;
+    box-shadow: 0 3px 6px rgb(0 0 0 / 0.0);
+    /*margin-top: -25px;*/
+    margin: 0.5rem 0 0.5rem 0;
+}
 
-/************ STYLE ACCESSIBILITY *************/
+#side-tittel {
+    display: flex;
+    justify-content: center;
+    text-shadow: none;
+    padding: 1rem 1rem 0 1rem;
+    color:rgb(14, 2, 26);
+}
 
+#presentasjon {
+    display: flex;
+    align-self: center;
+    width: 50vw;
+    font-size: 0.9em;
+    text-transform: none;
+    text-align: center;
+    margin:0;
 
+}
 
+/****** TABLET SCREEN 600px - 960px ******/
+@media screen and (max-width: 960px) /* and (min-width: 600px)*/ { 
+    .forsidebilde {
+        height: 2em;
+    }
+    
+    h1 {
+        font-size: 1.4em;
+    }
+
+    h2 {
+        font-size: 2.3vw;
+    }
+    
+    p {
+        width: 50vw;
+    }
+
+    .intro{
+        width: auto;
+        font-size: 1em;
+        align-items: center;
+    }
+    .intro p {
+        text-align: center;
+    }
+
+    .sticky-header {
+        width: auto;
+        height: 1em;
+        margin-right: -6em;
+        margin-left: -6em;
+    }
+    .sticky-header h2 {
+        margin-bottom: -1em;
+    }
+
+    article div{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .paragraph-text {
+        align-items: center;
+    }
+
+    #academic-realms > div {
+        display: flex;
+        flex-direction: row;
+        width: 60vw;
+    }
+
+    figure {
+        margin-block: 1.5vw;
+        margin-inline: 1vw;
+    }
+
+    #academic-realms img{
+        width: 30vw;
+    }
+
+    .paragraph-text {
+        display: flex;
+        justify-content: center;
+    }
+
+    .paragraph-img {
+        width: 55%;
+    }
+
+    .intro p {
+        width: 60vw;
+    }
+
+    nav {
+        font-size: 0.7rem;
+    }
+
+    #presentasjon {
+        font-size: 0.8em;
+    }
+}
+
+/****** PHONE SCREEN < 600px ******/
+
+@media screen and (max-width: 600px) { 
+    .forsidebilde {
+        height: 0.8em;
+    }
+
+    nav {
+        font-size: 0.5rem;
+    }
+
+    .sticky-header {
+        width: auto;
+        height: 1em;
+        margin-right: -7em;
+        margin-left: -7em;
+    }
+    .sticky-header h2 {
+        margin-bottom: -1em;
+    }
+
+    h1 {
+        font-size: 0.8em;
+    }
+
+    h2 {
+        font-size: 0.9em;
+    }
+
+    article p{
+        width: 70vw;
+    }
+
+    .intro{
+        width: auto;
+        align-items: center;
+    }
+    .intro p {
+        font-size: 1em;
+        text-align: center;
+        margin-right: -2em;
+        margin-left: -2em;
+    }
+
+    #academic-realms img {
+        width: 8em;
+        margin-left: -2.4em;
+        margin-right: -2.4em;
+    }
+
+    figcaption{
+        font-size: 0.5em;
+        width: 90vw;
+        text-align: center;
+    }
+
+    #presentasjon {
+        font-size: 0.7rem;
+    }
+    
+}
