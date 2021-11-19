@@ -59,6 +59,10 @@ nav a{
     text-decoration: none;
 }
 
+nav a:hover {
+    outline: 1px solid white;
+}
+
 .currentPage {
     color:rgb(81, 255, 0);
     pointer-events: none;
@@ -91,14 +95,21 @@ img {
 .paragraph{
     flex-direction: column;
     /* Får underoverskriftene over tekstene*/
-
-
 }
 
 div {
     display: flex;
     justify-content: space-around;
     padding: 1rem;
+}
+
+#mute {
+    height: 12vh;
+    min-height: 40px;
+    width: auto;
+    border: 1px solid #06be00;
+    border-radius: 15px;
+    cursor: pointer;
 }
 
 /* Input field styling (Matrix) */
