@@ -235,6 +235,11 @@ figcaption{
     .forsidebilde {
         height: 2em;
     }
+
+    #side-tittel {
+        display: inline;
+        text-align: center;
+    }
     
     h1 {
         font-size: 1.4em;
@@ -334,6 +339,12 @@ figcaption{
     }
     .sticky-header h2 {
         margin-bottom: -1em;
+    }
+
+    #side-tittel {
+        display: inline;
+        text-align: center;
+        font-size: 120%;
     }
 
     h1 {
