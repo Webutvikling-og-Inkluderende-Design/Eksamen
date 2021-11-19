@@ -54,8 +54,7 @@ nav{
     box-shadow: 0 3px 6px rgb(0 0 0 / 0.2);
     display: flex;
     justify-content: space-around;
-    font-size: 16px;
-    padding: 1rem 0 1rem;
+    font-size: 1rem;
     background-color: white;
     text-transform:uppercase;
     /* Koden under gjør at navbaren blir sticky i toppen. */
@@ -71,8 +70,7 @@ nav a{
     position: relative;
     color: rgb(14, 2, 26);
     text-decoration: none;     
-    padding: 2em;     
-    margin: -2em; 
+    padding: 1em;
 }
 
 nav a:hover {
@@ -327,10 +325,11 @@ figcaption{
     }
 
     .sticky-header {
-        width: auto;
+        width: 100vw;
         height: 1em;
         margin-right: -7em;
         margin-left: -7em;
+        padding-left: 5em;
     }
     .sticky-header h2 {
         margin-bottom: -1em;
@@ -342,10 +341,19 @@ figcaption{
 
     h2 {
         font-size: 0.9em;
+        overflow-x: hidden;
+    }
+
+    article {
+        margin: 0;
     }
 
     article p{
         width: 70vw;
+    }
+
+    .paragraph-img{
+        width: 50vw;
     }
 
     .intro{
@@ -360,9 +368,8 @@ figcaption{
     }
 
     #academic-realms img {
-        width: 8em;
-        margin-left: -2.4em;
-        margin-right: -2.4em;
+        width: 6em;
+        padding-bottom: 1em;
     }
 
     figcaption{
