@@ -121,8 +121,6 @@ img {
 .paragraph{
     flex-direction: column;
     /* Får underoverskriftene over tekstene*/
-
-
 }
 
 div {
@@ -152,6 +150,12 @@ footer a{
     text-decoration: none;
     color: white;
     /*color: rgb(14, 2, 26);*/
+}
+
+.til-toppen {
+    display: flex;
+    justify-content: flex-end;
+    color:#000000;
 }
 
 /************ STYLE REFLECTION - ESSAY *************/
