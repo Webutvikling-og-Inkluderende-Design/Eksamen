@@ -161,7 +161,7 @@ footer a{
 
 .til-toppen {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     color:#000000;
 }
 
