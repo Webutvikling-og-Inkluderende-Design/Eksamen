@@ -12,6 +12,7 @@ body {
 h1 {
     font-size: 2em;
     color: white;
+    text-shadow: 4px 4px 8px #000000; /* Ble det lettere å lese nå? */
     position: relative;
     top: -10px;
 }
@@ -132,13 +133,26 @@ div {
 }
 
 footer{
+    background-image: url(images/reflection/banner.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    height: 6rem;
+   /* padding: 40px 0 40px;   Kan fjernes*/
+    color: white;
+    text-shadow: 4px 4px 8px #000000; /* Ble det lettere å lese nå? */
+    display: flex;
+    justify-content: center;
+    text-align: center;
+   /* background-image: ;
     margin-left: 8px;
     color: rgb(0, 0, 0);
-    font-size: 10px;
+    font-size: 10px;*/
 }
 footer a{
     text-decoration: none;
-    color: rgb(14, 2, 26);
+    color: white;
+    /*color: rgb(14, 2, 26);*/
 }
 
 /************ STYLE REFLECTION - ESSAY *************/
@@ -182,15 +196,27 @@ figcaption{
 #navbar-forside {
     width: 70vw;
     box-shadow: 0 3px 6px rgb(0 0 0 / 0.0);
-    margin-top: -25px;
-    margin-bottom: 15px;
+    /*margin-top: -25px;*/
+    margin: 0.5rem 0 0.5rem 0;
 }
 
 #side-tittel {
     display: flex;
     justify-content: center;
-    padding: 1rem;
+    text-shadow: none;
+    padding: 1rem 1rem 0 1rem;
     color:rgb(14, 2, 26);
+}
+
+#presentasjon {
+    display: flex;
+    align-self: center;
+    width: 50vw;
+    font-size: 0.9em;
+    text-transform: none;
+    text-align: center;
+    margin:0;
+
 }
 
 /****** TABLET SCREEN 600px - 960px ******/
@@ -271,6 +297,10 @@ figcaption{
     nav {
         font-size: 0.7rem;
     }
+
+    #presentasjon {
+        font-size: 0.8em;
+    }
 }
 
 /****** PHONE SCREEN < 600px ******/
@@ -327,6 +357,10 @@ figcaption{
         font-size: 0.5em;
         width: 90vw;
         text-align: center;
+    }
+
+    #presentasjon {
+        font-size: 0.7rem;
     }
     
 }
