@@ -46,8 +46,8 @@ p {
     background-position: center;
     background-size: cover;
     width: 100vw;
-    height: 70px;
-    padding: 40px 0 40px;
+    height: 4.5rem;
+    padding: 2.5rem 0 2.5rem;
 }
 
 /* Navigation bar */
@@ -62,7 +62,7 @@ nav{
     position: sticky;
     top: 0;
     width: 100vw;
-    overflow: auto;
+    /*overflow: auto;*/
     z-index: 2;
 }
  
@@ -85,6 +85,8 @@ nav a:hover {
     text-decoration: none;
     font-weight: bold;
 }
+
+
 
 /* Article specific text elements */
 article  {
@@ -123,7 +125,7 @@ img {
 }
 
 #academic-realms img{
-    width: 250px;
+    width: 15rem;
 }
 
 .paragraph{
@@ -239,6 +241,10 @@ figcaption{
         display: inline;
         text-align: center;
     }
+
+    #navbar-forside {
+        font-size: 0.8rem;
+    }
     
     h1 {
         font-size: 1.4em;
@@ -309,9 +315,6 @@ figcaption{
         width: 60vw;
     }
 
-    nav {
-        font-size: 0.7rem;
-    }
 
     #presentasjon {
         font-size: 0.8em;
@@ -325,9 +328,9 @@ figcaption{
         height: 0.8em;
     }
 
-   /* nav {
-        font-size: 0.5rem;
-    }*/
+    nav {
+        font-size: 0.8rem;
+    }
 
     #navbar-forside{
         /*display: flex;
@@ -358,6 +361,12 @@ figcaption{
         font-size: 120%;
     }
 
+    article div{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
     h1 {
         font-size: 0.8em;
     }
@@ -378,6 +387,9 @@ figcaption{
     .paragraph-img{
         width: 50vw;
     }
+    .paragraph-text {
+        align-items: center;
+    }
 
     .intro{
         width: auto;
@@ -391,8 +403,18 @@ figcaption{
     }
 
     #academic-realms img {
-        width: 6em;
-        padding-bottom: 1em;
+        width: 8rem;
+        padding-bottom: 1rem;
+    }
+
+    #academic-realms > div {
+        display: flex;
+        flex-direction: row;
+        width: 60vw;
+    }
+
+    figure {
+        margin:0.5rem;
     }
 
     figcaption{
