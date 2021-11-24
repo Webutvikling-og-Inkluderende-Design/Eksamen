@@ -231,8 +231,8 @@ figcaption{
 
 }
 
-/****** TABLET SCREEN 660px - 960px ******/
-@media screen and (max-width: 960px) and (min-width: 600px) { 
+/****** TABLET SCREEN 670px - 960px ******/
+@media screen and (max-width: 960px) and (min-width: 670px) { 
     .forsidebilde {
         height: 2em;
     }
@@ -321,9 +321,9 @@ figcaption{
     }
 }
 
-/****** PHONE SCREEN < 660px ******/
+/****** PHONE SCREEN < 669px ******/
 
-@media screen and (max-width: 660px) { 
+@media screen and (max-width: 669px) { 
     .forsidebilde {
         height: 0.8em;
     }
