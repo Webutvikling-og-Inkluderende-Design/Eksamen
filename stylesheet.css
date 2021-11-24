@@ -1,9 +1,11 @@
+/****** Style for index.html, reflection-essay.html, accessibility.html and topical-information.html ******/
+
+
 body {
     background-color:rgb(255, 255, 255);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     width: 100vw;
     height: 100%;
-    /*prøver få vekk at man kan scrolle til siden.          Tror den kan fjernes*/
     overflow-x: hidden; 
     margin: 0;
 }
@@ -50,6 +52,16 @@ p {
     padding: 2.5rem 0 2.5rem;
 }
 
+.sticky-header {
+    display: flex;
+    position: sticky;
+    top: 1rem;
+    width: auto;
+    height: 2rem;
+    background-color: white;
+    margin-left: -5em;
+    margin-right: -5em;
+}
 /* Navigation bar */
 nav{
     box-shadow: 0 3px 6px rgb(0 0 0 / 0.2);
@@ -86,8 +98,6 @@ nav a:hover {
     font-weight: bold;
 }
 
-
-
 /* Article specific text elements */
 article  {
     display: flex;
@@ -96,17 +106,6 @@ article  {
     font-size: 16px;
     margin: 15px 5rem;
     padding: 2rem;
-}
-
-.sticky-header {
-    display: flex;
-    position: sticky;
-    top: 1rem;
-    width: auto;
-    height: 2rem;
-    background-color: white;
-    margin-left: -5em;
-    margin-right: -5em;
 }
 
 img {
@@ -124,13 +123,8 @@ img {
     flex-direction: column;
 }
 
-#academic-realms img{
-    width: 15rem;
-}
-
 .paragraph{
     flex-direction: column;
-    /* Får underoverskriftene over tekstene*/
 }
 
 div {
@@ -138,6 +132,8 @@ div {
     justify-content: space-around;
     padding: 2rem 0;
 }
+
+/******** Footer *********/
 
 footer{
     background-image: url(images/reflection/banner.jpg);
@@ -168,24 +164,8 @@ footer a{
     color:#000000;
 }
 
-/************ STYLE REFLECTION - ESSAY *************/
-
-
-#academic-realms{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#academic-realms > div{
-    margin: -2.5rem;
-}
-
-figcaption{
-    font-size: 13px;
-}
-
 /************ STYLE HOME - PAGE *************/
+
 #homepage {
     height: 100vh;
     background-image: url("images/reflection/oslomet-campus.jpg");
@@ -231,21 +211,33 @@ figcaption{
 
 }
 
+/************ STYLE REFLECTION - ESSAY *************/
+
+#academic-realms{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#academic-realms img{
+    width: 15rem;
+}
+
+#academic-realms > div{
+    margin: -2.5rem;
+}
+
+figcaption{
+    font-size: 13px;
+}
+
 /****** TABLET SCREEN 670px - 960px ******/
+
 @media screen and (max-width: 960px) and (min-width: 670px) { 
     .forsidebilde {
         height: 2em;
     }
 
-    #side-tittel {
-        display: inline;
-        text-align: center;
-    }
-
-    #navbar-forside {
-        font-size: 0.8rem;
-    }
-    
     h1 {
         font-size: 1.4em;
     }
@@ -287,6 +279,33 @@ figcaption{
         align-items: center;
     }
 
+    .paragraph-text {
+        display: flex;
+        justify-content: center;
+    }
+
+    .paragraph-img {
+        width: 55%;
+    }
+
+    .intro p {
+        width: 60vw;
+    }
+    /***** Home-page tablet screen ******/
+    #side-tittel {
+        display: inline;
+        text-align: center;
+    }
+
+    #navbar-forside {
+        font-size: 0.8rem;
+    }
+
+    #presentasjon {
+        font-size: 0.8em;
+    }
+    
+    /******** Reflection - essay tablet screen ******/
     #academic-realms > div {
         display: flex;
         flex-direction: row;
@@ -301,24 +320,6 @@ figcaption{
     #academic-realms img{
         width: 30vw;
     }
-
-    .paragraph-text {
-        display: flex;
-        justify-content: center;
-    }
-
-    .paragraph-img {
-        width: 55%;
-    }
-
-    .intro p {
-        width: 60vw;
-    }
-
-
-    #presentasjon {
-        font-size: 0.8em;
-    }
 }
 
 /****** PHONE SCREEN < 669px ******/
@@ -332,18 +333,6 @@ figcaption{
         font-size: 0.6rem;
     }
 
-    #navbar-forside{
-        /*display: flex;
-        flex-direction: column;*/
-        font-size: 0.8rem;
-        text-decoration: underline;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        align-self: center;
-        flex-direction: column;
-    }
-
     .sticky-header {
         width: 100vw;
         height: 1em;
@@ -353,12 +342,6 @@ figcaption{
     }
     .sticky-header h2 {
         margin-bottom: -1em;
-    }
-
-    #side-tittel {
-        display: inline;
-        text-align: center;
-        font-size: 120%;
     }
 
     article div{
@@ -391,6 +374,11 @@ figcaption{
         align-items: center;
     }
 
+    #presentasjon {
+        font-size: 0.8rem;
+        text-align: left;
+    }
+
     .intro{
         width: auto;
         align-items: center;
@@ -402,6 +390,51 @@ figcaption{
         margin-left: -2em;
     }
 
+    footer {
+        font-size: 0.8em;
+    }
+    
+    /******* Home-page phone screen *******/
+    #navbar-forside {
+        /*display: flex;
+        flex-direction: column;*/
+        font-size: 0.8rem;
+        text-decoration: underline;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        align-self: center;
+        flex-direction: column;
+    }
+
+    #side-tittel {
+        display: inline;
+        text-align: center;
+        font-size: 120%;
+    }
+
+
+    /******* Home-page phone screen *******/
+    #navbar-forside{
+        /*display: flex;
+        flex-direction: column;*/
+        font-size: 0.8rem;
+        text-decoration: underline;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        align-self: center;
+        flex-direction: column;
+    }
+
+    #side-tittel {
+        display: inline;
+        text-align: center;
+        font-size: 120%;
+    }
+
+
+    /********** Reflection essay phone screen *********/
     #academic-realms img {
         width: 8rem;
         padding-bottom: 1rem;
@@ -421,17 +454,5 @@ figcaption{
         font-size: 0.5em;
         width: 90vw;
         text-align: center;
-    }
-
-    #presentasjon {
-        font-size: 0.8rem;
-        text-align: left;
-     
-    }
-
-    footer{
-        font-size: 0.8em;
-    }
-    
-    
+    }    
 }
