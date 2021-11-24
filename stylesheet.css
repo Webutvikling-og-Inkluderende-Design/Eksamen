@@ -76,7 +76,7 @@ nav a{
 
 nav a:hover {
     outline: 1px solid black;
-    outline-offset: 6px;
+    outline-offset: -4px;
 }
 
 .currentPage {
