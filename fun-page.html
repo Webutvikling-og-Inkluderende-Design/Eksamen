@@ -17,7 +17,7 @@
 
     <!-- Navigasjonsbar -->
     <nav class="navbar">
-        <a href="index.html" alt="Link that leads to homepage">HOME</a>
+        <a href="index.html">HOME</a>
         <a href="reflection-essay.html">REFLECTION</a>
         <a href="accessibility.html">ACCESSIBILITY</a>
         <a href="topical-information.html">TECH & SOCIETY</a>
@@ -30,7 +30,7 @@
             <!-- Sidetittel -->
             <h2>SUPER SECRET PAGE</h2>
 
-            <img id="mute" src="images/fun/mute.png" onclick="document.getElementById('hacker-music').pause()"/>
+            <img id="mute" src="images/fun/mute.png" onclick="document.getElementById('hacker-music').pause()" alt="Button that mute the music"/>
 
             <div class="paragraph-text">
                 <!-- Subtittel -->    
@@ -51,7 +51,7 @@
                     <textarea id="hackspace" name="hackspace" rows="20" cols="50" placeholder="Flaunt your awesome hacking skils here!"></textarea>
                     <br>
                     <div class="popup" onclick="PopUp()">
-                        <button id="hack-button" type="button" alt="Button that displays message from the Government telling you that you've hacked them.">HACK</button>
+                        <button id="hack-button" type="button">HACK</button>
                         <img class="popup-chat" id="fun-chat" src="images/fun/chat.jpg" alt="Iphone chat screen with a message from Government telling the receiver it's been hacked.">
                     </div>
                 </form>
@@ -65,23 +65,23 @@
 
     <footer>
         <p>
-            Bilder er hentet fra 
-            <a href="https://www.unsplash.com/" target="_blank">www.unsplash.com</a>, <a href="https://www.pixabay.com/" target="_blank">www.pixabay.com</a> og <a href="https://www.flickr.com/photos/oslomet/" target="_blank">www.flickr.com/photos/oslomet</a>
-        </p>
-        <p>
-            Music: Hackers - "Karl Casey @ White Bat Audio"
+            The pictures are taken from
+            <a href="https://www.unsplash.com/" target="_blank">www.unsplash.com</a>, <a href="https://www.pixabay.com/" target="_blank">www.pixabay.com</a> and <a href="https://www.flickr.com/photos/oslomet/" target="_blank">www.flickr.com/photos/oslomet</a>
+            <br>Music: Hackers - "Karl Casey @ White Bat Audio"
         </p>
     </footer>
+
+    <!-- Javascript -->
+    <script>
+        // Script is borrowed from W3School as we have not been taught Javascript (not before exam start anyway), but i wanted to test it out nonetheless.
+        // PopUp
+        function PopUp() {
+            var popup = document.getElementById("fun-chat");
+            popup.classList.toggle("visible");
+        }
+        // Music Volume
+        var audio = document.getElementById("hacker-music");
+        audio.volume = 0.3;
+    </script>
 </body>
 
-<script>
-    // Script is borrowed from W3School as we have not been taught Javascript (not before exam start anyway), but i wanted to test it out nonetheless.
-    // PopUp
-    function PopUp() {
-        var popup = document.getElementById("fun-chat");
-        popup.classList.toggle("visible");
-    }
-    // Music Volume
-    var audio = document.getElementById("hacker-music");
-    audio.volume = 0.3;
-</script>

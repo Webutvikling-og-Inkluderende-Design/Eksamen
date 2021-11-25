@@ -414,8 +414,6 @@ figcaption{
 
     /******* Home-page phone screen *******/
     #navbar-forside {
-        /*display: flex;
-        flex-direction: column;*/
         font-size: 0.8rem;
         text-decoration: underline;
         display: flex;
@@ -435,8 +433,6 @@ figcaption{
 
     /******* Home-page phone screen *******/
     #navbar-forside{
-        /*display: flex;
-        flex-direction: column;*/
         font-size: 0.8rem;
         text-decoration: underline;
         display: flex;
