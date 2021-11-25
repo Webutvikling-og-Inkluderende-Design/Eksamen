@@ -165,18 +165,32 @@ textarea:focus, input:focus {
 }
 
 footer{
-    margin-top: -30px;
-    margin-left: 20px;
+    background-image: url(images/fun/banner-fun.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    height: 6rem;
     color: white;
-    font-size: 8px;
+    text-shadow: 4px 4px 8px #000000;
+    display: inline-block;
+    justify-content: center;
+    text-align: center;
+    font-size: 0.8em;
 }
-footer a{
-    text-decoration: none;
-    color: rgb(255, 255, 255);
+footer p{
+    width: 35vw;
+    line-height: 1.5;
+    display: inline-block;
+    text-align: center;
 }
 
-/****** Screens < 700px ******/
-@media screen and (max-width: 700px) {
+footer a{
+    text-decoration: none;
+    color: white;
+}
+
+/****** Screens < 960px ******/
+@media screen and (max-width: 960px) {
     h1 {
         font-size: 22.5px;
     }
@@ -214,6 +228,13 @@ footer a{
     .popup .popup-chat {
         width: 325px;
         left: -75%;
+    }
+
+    footer{
+        font-size: 0.7em;
+    }
+    footer p {
+        width: 47.5vw;
     }
 }
 
@@ -273,8 +294,11 @@ footer a{
 
     footer{
         margin-top: -70px;
-        margin-left: 40px;
         color: white;
-        font-size: 5px;
+        font-size: 0.6em;
+    }
+    footer p {
+        width: 70vw;
+        margin-top: 2em;
     }
 }
