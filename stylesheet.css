@@ -332,6 +332,10 @@ figcaption{
     nav {
         font-size: 0.6rem;
     }
+    nav a{
+        display: inline-block;
+        text-align: center;
+    }
 
     .sticky-header {
         width: 100vw;
