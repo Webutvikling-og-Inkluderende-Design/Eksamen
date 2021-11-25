@@ -243,6 +243,10 @@ footer a{
     nav{
         font-size: 0.6rem;
     }
+    nav a{
+        display: inline-block;
+        text-align: center;
+    }
 
     #cool-images img{
         width: 40%;
