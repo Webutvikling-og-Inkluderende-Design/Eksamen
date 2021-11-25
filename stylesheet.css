@@ -166,7 +166,7 @@ footer a{
 #homepage {
     height: 100vh;
     background-image: url("images/reflection/oslomet-campus.jpg");
-    background-size:cover;
+    background-size: cover;
     display: flex;
     justify-content: center;
 }
@@ -295,6 +295,11 @@ figcaption{
         width: 60vw;
     }
     /***** Home-page tablet screen ******/
+    #navbar-forside a {
+        display: inline-block;
+        text-align: center;
+    }
+
     #side-tittel {
         display: inline;
         text-align: center;
