@@ -228,7 +228,10 @@ footer a{
 }
 
 figcaption{
+    padding-top: 1rem;
     font-size: 13px;
+    margin-left: -2rem;
+    margin-right: -2rem;
 }
 
 /****** TABLET SCREEN 670px - 960px ******/
@@ -322,9 +325,9 @@ figcaption{
     }
 }
 
-/****** PHONE SCREEN < 669px ******/
+/****** PHONE SCREEN < 670px ******/
 
-@media screen and (max-width: 669px) { 
+@media screen and (max-width: 670px) { 
     .forsidebilde {
         height: 0.8em;
     }
