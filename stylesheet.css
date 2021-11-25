@@ -436,8 +436,10 @@ figcaption{
 
     /********** Reflection essay phone screen *********/
     #academic-realms img {
-        width: 8rem;
+        width: 7rem;
         padding-bottom: 1rem;
+        margin-left: -1vw;
+        margin-right: -1vw;
     }
 
     #academic-realms > div {
