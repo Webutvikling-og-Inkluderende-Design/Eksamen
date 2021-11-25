@@ -245,7 +245,7 @@ figcaption{
     }
     
     p {
-        width: 50vw;
+        width: 60vw;
     }
 
     .intro{
@@ -401,8 +401,8 @@ figcaption{
     .intro p {
         font-size: 1em;
         text-align: center;
-        margin-right: -2em;
-        margin-left: -2em;
+        width: 70vw;
+ 
     }
 
     footer {
