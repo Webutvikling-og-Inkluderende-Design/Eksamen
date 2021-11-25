@@ -12,18 +12,12 @@ body {
 
 /* Text elements */
 h1 {
-    font-size: 2em;
     color: white;
     position: relative;
     top: -10px;
 }
 
 h2 {
-    display: flex;
-    justify-content: center;
-}
-
-h3 {
     display: flex;
     justify-content: center;
 }
