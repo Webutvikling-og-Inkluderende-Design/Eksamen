@@ -42,16 +42,6 @@ p {
     font-size: 18px;
 }
 
-/* Banner styling */
-.forsidebilde {
-    background-image: url(images/reflection/banner.jpg);
-    background-position: center;
-    background-size: cover;
-    width: 100vw;
-    height: 4.5rem;
-    padding: 2.5rem 0 2.5rem;
-}
-
 .sticky-title {
     display: flex;
     position: sticky;
@@ -62,6 +52,17 @@ p {
     margin-left: -5em;
     margin-right: -5em;
 }
+
+/* Banner styling */
+.forsidebilde {
+    background-image: url(images/reflection/banner.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    height: 4.5rem;
+    padding: 2.5rem 0 2.5rem;
+}
+
 /* Navigation bar */
 nav{
     box-shadow: 0 3px 6px rgb(0 0 0 / 0.2);
@@ -418,25 +419,6 @@ figcaption{
     }
 
     /******* Home-page phone screen *******/
-    #navbar-forside {
-        font-size: 0.8rem;
-        text-decoration: underline;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        align-self: center;
-        flex-direction: column;
-        
-    }
-
-    #side-tittel {
-        display: inline;
-        text-align: center;
-        font-size: 120%;
-    }
-
-
-    /******* Home-page phone screen *******/
     #navbar-forside{
         font-size: 0.8rem;
         text-decoration: underline;
@@ -447,13 +429,6 @@ figcaption{
         flex-direction: column;
         height: auto;
     }
-
-    #side-tittel {
-        display: inline;
-        text-align: center;
-        font-size: 120%;
-    }
-
 
     /********** Reflection essay phone screen *********/
     #academic-realms img {
