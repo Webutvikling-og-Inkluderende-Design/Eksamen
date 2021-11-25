@@ -391,6 +391,8 @@ figcaption{
     #presentasjon {
         font-size: 0.8rem;
         text-align: left;
+        display: inline-block;
+        text-align: center;
     }
 
     .intro{
@@ -424,6 +426,8 @@ figcaption{
         flex-direction: column;
         height: auto;
     }
+
+
 
     /********** Reflection essay phone screen *********/
     #academic-realms img {
