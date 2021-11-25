@@ -52,7 +52,7 @@ p {
     padding: 2.5rem 0 2.5rem;
 }
 
-.sticky-header {
+.sticky-title {
     display: flex;
     position: sticky;
     top: 1rem;
@@ -259,13 +259,13 @@ figcaption{
         text-align: center;
     }
 
-    .sticky-header {
+    .sticky-title {
         width: auto;
         height: 1em;
         margin-right: -6em;
         margin-left: -6em;
     }
-    .sticky-header h2 {
+    .sticky-title h2 {
         margin-bottom: -1em;
     }
 
@@ -337,14 +337,14 @@ figcaption{
         text-align: center;
     }
 
-    .sticky-header {
+    .sticky-title {
         width: 100vw;
         height: 1em;
         margin-right: -7em;
         margin-left: -7em;
         padding-left: 5em;
     }
-    .sticky-header h2 {
+    .sticky-title h2 {
         margin-bottom: -1em;
     }
 
