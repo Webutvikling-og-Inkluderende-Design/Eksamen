@@ -143,7 +143,7 @@ footer{
     display: flex;
     justify-content: center;
     text-align: center;
-    font-size: 0.9em;
+    font-size: 0.8em;
 }
 footer a{
     text-decoration: none;
@@ -410,6 +410,7 @@ figcaption{
     }
     footer p {
         padding-top: 1em;
+        width: 60vw;
     }
 
     /******* Home-page phone screen *******/
